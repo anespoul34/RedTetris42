@@ -1,0 +1,24 @@
+@font-face {
+	font-family: brandonLight;
+	src: url('./brandon_light.otf');
+}
+@font-face {
+	font-family: brandonMed;
+	src: url('./brandon_med.otf');
+}
+@font-face {
+	font-family: brandonReg;
+	src: url('./brandon_reg.otf');
+}
+@font-face {
+	font-family: brandonBold;
+	src: url('./brandon_bold.otf');
+}
+@font-face {
+	font-family: brandonLightIta;
+	src: url('./brandon_light_it.otf');
+}
+@font-face {
+	font-family: brandonRegIta;
+	src: url('./brandon_reg_it.otf');
+}

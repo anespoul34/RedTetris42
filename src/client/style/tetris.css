@@ -1,0 +1,229 @@
+#tetris {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height:100%;
+}
+
+#designGame {
+	border-style: solid;
+	border-width: 30px 100vw 0 0;
+	border-color: #E94A3A #f7f7f7;
+}
+
+#game {
+	display:flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background:#f7f7f7;
+}
+#gameBoard {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#board {
+	background-color: #fff;
+	border-radius:5px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	margin:30px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+  flex-direction: column;
+	width: 450px;
+	min-width: 450px;
+	height: 900px;
+	min-height: 900px;
+	box-shadow: 0px 0px 80px -40px;
+}
+.gravity {
+	transform: rotate(180deg);
+}
+.invisible {
+	background-color: transparent!important;
+}
+
+#tetrisRightBlock {
+	width: 400px;
+	height: 900px;
+	display:flex;
+	flex-direction: column;
+	margin-left: 15px;
+	padding-top: 30px;
+}
+#gameInfo {
+	background-color: #fff;
+	display:flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin: 0 0 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 80px -35px;
+}
+
+#score {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	color: #E94A3A;
+	font-size: 20pt;
+}
+#score .score {
+	font-family: brandonBold, sans-serif;
+}
+#scoreWording {
+	font-family: brandonLight, sans-serif;
+}
+
+#nextPieceInfo {
+	width:50%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#nextPieceInfo .I {
+	margin-top: -20px!important;
+}
+
+#nextPieceWording {
+	font-family: brandonLight, sans-serif;
+	color: #E94A3A;
+	font-size: 20pt;
+	width: 50%;
+	padding-left: 27px;
+}
+
+#nextPiece {
+	width:50%;
+}
+
+.undisplayButton {
+	display: none;
+}
+.displayButton {
+	display: block;
+}
+
+#nextPiece .line {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 17px;
+	margin: 0px;
+}
+#nextPiece .box {
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	margin: 0px 1px;
+}
+
+#spectres {
+	background-color: #fff;
+	width: 100%;
+	height: 760px;
+	border-radius: 5px;
+	padding: 0 0 15px;
+	margin: 0 0 0;
+	box-shadow: 0 0 80px -40px;	
+}
+
+#opponent {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color: #E94A3A;
+	font-size: 20pt;
+	font-family: brandonLight, sans-serif;
+	padding: 10px 0 0 0;
+}
+
+#spectresList {
+	height: 710px;
+	padding: 0;
+}
+
+#spectres li {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style-type: none;
+	width: 100%;
+	height: 33.33%;
+}
+
+#spectres li span {
+	margin-bottom: 6px;
+	font-size: 15pt;
+	color: #E94A3A;
+	font-family: brandonReg, sans-serif;
+}
+
+#spectres li .board {
+	border: 1px solid #E94A3A;
+	width: 30%;
+	height: 84%;
+	border-radius: 3px;
+}
+
+#spectres li .line {
+	margin: 0;
+}
+
+#spectres li .box {
+	border: none;
+	border-radius: 0px;
+	margin:0px;
+}
+
+.line {
+  display: flex;
+  width: 100%;
+  height: 5%;
+  margin: 2px 0;
+}
+
+.box {
+	border-radius: 5px;
+	margin: 2px;
+  background-color: #fff;
+  width: 10%;
+  height: 100%;
+}
+
+.I {
+  background: #7FCCE4;
+}
+.O {
+  background: #FDE56A;
+}
+.T {
+  background: #B478AC;
+}
+.J {
+  background: #3a5293;
+}
+.L {
+  background: #F0AE64;
+}
+.S {
+  background: #B8D76F;
+}
+.N {
+  background: #DB484C;
+}
+.X {
+	transition: background-color 0.5s ease;
+	background-color: #C8C8C8;
+}
+.Z {
+	background: #E94A3A;
+}

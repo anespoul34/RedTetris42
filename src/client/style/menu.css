@@ -1,0 +1,110 @@
+#menu {
+	width: 100%;
+	height: 45%;
+	background-color: #F7F7F7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#pickAName {
+	width: 100%;
+	margin-top: -50px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	background-color: #E94A3A;
+
+}
+#pickAName input {
+	border: none;
+	box-shadow: -5px 5px 15px #b21010;
+	width: 330px;
+	height: 40px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	font-size: 18pt;
+	font-family: brandonLightIta, sans-serif;
+	color: #E94A3A;	
+	padding: 5px 0 5px 15px;
+}
+#pickAName input::placeholder {
+
+	font-size: 18pt;
+	font-family: brandonLightIta, sans-serif;
+	color: #E94A3A;
+}
+
+#menuButtons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+@media screen and (max-width: 991px) {
+	#menuButtons .displayButton {
+		margin: 0 25px!important;
+		justify-content: space-between!important;
+	}
+}
+
+#menuButtons .displayButton {
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 110px 0 110px;
+}
+
+#menuButtons .displayButton span {
+	margin: 30px 0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:200px;
+	font-size: 40pt;
+	color: #818080;
+	font-family: brandonReg, sans-serif;
+}
+#menuButtons .displayButton .aRoom {
+	font-size: 53pt!important;
+}
+#menuButtons .displayButton .arrow {
+	width: 30px;
+	padding: 15px 0;
+	margin-top:30px;
+	transition: transform 1s;
+	background: url('./grey_arrow.png');
+}
+#menuButtons .displayButton:hover span {
+	cursor: pointer;
+	color: #E94A3A;
+	font-family: brandonBold, sans-serif;
+}
+#menuButtons .displayButton:hover .arrow {
+	background: url('./red_arrow.png');
+	transform: rotate(270deg);
+}
+
+#menu #error {
+	margin: 0 0 15px;
+	font-family: brandonLightIta, sans-serif;
+	font-size: 20pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

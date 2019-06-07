@@ -1,0 +1,31 @@
+html, body {
+	background-color: #E94A3A;
+	margin: 0;
+	height: 100%;
+}
+
+h3 {
+	margin: 15px 0 -15px;
+	font-family: brandonReg, sans-serif;
+	font-size: 35pt;
+	color: #F7F7F7;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#main #mainTitle {
+	height:55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#error {
+	color: #E94A3A;
+}

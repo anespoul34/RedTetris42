@@ -1,0 +1,353 @@
+@keyframes arrowRight {
+	0% {transform: rotate(270deg) translateY(0px);}
+	50% {transform: rotate(270deg) translateY(50px);}
+	100% {transform: rotate(270deg) translateY(0px);}
+}
+@keyframes circleSplash {
+	0% {transform: rotate(0deg);}
+	50% {font-size: 45pt; border-radius: 10px; transform: scale(1.2) rotate(180deg);}
+	100% {transform: scale(1.2) rotate(0deg);}
+}
+
+#settings {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#createRoom {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: -120px;
+}
+
+#pickARoomName {
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	margin-top: 15px;
+}
+#pickARoomName input {
+	border: none;
+	box-shadow: -5px 5px 15px #b21010;
+	width: 380px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 18pt;
+	font-family: brandonLightIta, sans-serif;
+	color: #E94A3A;	
+	padding: 5px 0 5px 15px;
+}
+#pickARoomName input::placeholder {
+	font-size: 18pt;
+	font-family: brandonLightIta, sans-serif;
+	color: #E94A3A;
+}
+
+#createRoom #button_list {
+	width: 550px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 35px;
+}
+#createRoom #button_list .playersSelection {
+	font-family: brandonRegIta, sans-serif;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	margin: 15px;
+	font-size: 20px;
+	cursor: pointer;	
+	box-shadow: -5px 0px 15px #b21010;
+	border-radius: 50px;
+	border: 2px solid #F7F7F7;
+	background-color: #E94A3A;
+	color: #F7F7F7;
+	/*transition: 0.5s;*/
+}
+
+#createRoom #button_list .modeSelection {
+	font-family: brandonRegIta, sans-serif;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: 115px;
+	height: 45px;
+	margin: 15px;
+	font-size: 20px;
+	cursor: pointer;	
+	box-shadow: -5px 0px 15px #b21010;
+	border-radius: 50px;
+	border: 2px solid #F7F7F7;
+	background-color: #E94A3A;
+	color: #F7F7F7;
+	/*transition: 0.5s;*/
+}
+
+#createRoom #button_list .playersSelection:hover {
+	transform: scale(1.2);
+	animation-name: circleSplash;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	background-color: #F7F7F7;
+	color: #E94A3A;
+}
+
+#createRoom #button_list .gravitySelection:hover {
+	transform: scale(1.2) rotate(180deg);
+	background-color: #F7F7F7;
+	color: #E94A3A;
+	transition: 0.5s;
+}
+#createRoom #button_list .invisibleSelection:hover {
+	transform: scale(1.2);
+	color: transparent;
+	border-color: transparent;
+	transition: 1s;
+}
+#createRoom #button_list .Iselect {
+	transform: scale(1.2);
+	border-color: transparent;
+	color: transparent;
+	transition: 1s;
+}
+#createRoom #button_list .classicSelection:hover {	
+	transform: scale(1.2);
+	background-color: #F7F7F7;
+	color: #E94A3A;
+	transition: 0.5s;
+}
+#createRoom #button_list .superminosSelection:hover {	
+	transform: scale(1.2);
+	background-color: #F7F7F7;
+	border-radius: 0;
+	color: #E94A3A;
+	transition: 0.5s;
+}
+
+#button_list .playersSelection:first-child {
+	margin-left: 0;
+}
+#button_list .playersSelection:last-child {
+	margin-right: 0;
+}
+#button_list .select {
+	transform: scale(1.2);
+	background-color: #F7F7F7!important;
+	color: #E94A3A!important;
+}
+#button_list .Sselect {
+	transform: scale(1.2);
+	border-radius: 0!important;
+	background-color: #F7F7F7!important;
+	color: #E94A3A!important;
+}
+#button_list .Gselect {
+	transform: scale(1.2) rotate(180deg);
+	background-color: #F7F7F7!important;
+	color: #E94A3A!important;	
+}
+
+#createRoomButton {
+	width: 100%;
+	height: 45%;
+	background-color: #F7F7F7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#createRoomButton #setRoomButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+#createRoomButton #setRoomButton:hover span {
+	cursor: pointer;
+	color: #E94A3A;
+	font-family: brandonBold, sans-serif;
+}
+#createRoomButton #setRoomButton span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: brandonReg, sans-serif;
+	font-size: 35pt;
+	color: #818080;
+}
+
+#createRoomButton #setRoomButton .arrow {
+	width: 30px;
+	padding: 15px 0;
+	margin: 10px 15px 0;
+	transform: rotate(270deg);
+	transition: transform 1s;
+	background: url('./grey_arrow.png');
+}
+#createRoomButton #setRoomButton:hover .arrow {
+	background: url('./red_arrow.png');
+	animation-name: arrowRight;
+	animation-duration: 1s;
+}
+
+#createRoomButton #error {
+	margin: 50px 0 0;
+	font-family: brandonLightIta, sans-serif;
+	font-size: 20pt;
+}
+
+#joinRoom {
+	width: 100%;
+	height: 70%;
+	background-color: #F7F7F7;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#listRooms {
+	overflow: auto;
+	height: 300px;
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+	box-shadow: -5px 5px 15px #b21010;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	list-style-type: none;
+}
+
+#joinRoom ul .no-select {
+	background-color: #fff;
+	color: #E94A3A;
+}
+#joinRoom ul .select {
+	background-color: #b21010;
+	color: #fff;
+}
+
+#listRooms li {
+	color: #E94A3A;
+	font-size: 15pt;
+	padding: 5px 15px;
+	text-transform: uppercase;
+	font-family: BrandonBold, sans-serif;
+}
+
+#listRooms .room {
+	display: flex;
+	justify-content: space-between;
+}
+
+#joinRoom {
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	height: 100%;
+	font-size: 20pt;
+	margin-top: 25px;
+	font-family: BrandonReg, sans-serif;
+}
+
+#joinRoomRotate {
+	display:flex;
+	justify-content: center;
+	width: 110%;
+	height: 80%;
+	margin-top: -75px;
+	background-color: #E94A3A;
+	transform: rotate(-2deg);
+}
+
+#joinRoomInfo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transform: rotate(2deg);
+}
+
+#joinRoomInfo h3 {
+	font-size: 45pt;
+	margin: 15px 0 45px!important;
+}
+
+#joinRoomButtons {
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#joinRoomButtons .joinRoomButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 35px 15px;
+}
+
+#joinRoomButtons .joinRoomButton span {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:200px;
+	font-size: 25pt;
+	color: #818080;
+	font-family: brandonReg, sans-serif;
+}
+
+#joinRoomButtons .arrow {
+	width: 30px;
+	padding: 15px 0;
+	margin-top: 15px;
+	transition: transform 1s;
+	background: url('./grey_arrow.png');
+}
+
+#joinRoomButtons .joinRoomButton:hover {
+	cursor: pointer;
+}
+
+#joinRoomButtons .joinRoomButton:hover span {
+	color: #E94A3A;
+	font-family: brandonBold, sans-serif;
+}
+#joinRoomButtons .joinRoomButton:hover .arrow {
+	background: url('./red_arrow.png');
+	transform: rotate(270deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
